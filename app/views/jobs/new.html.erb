@@ -1,0 +1,15 @@
+
+
+<%= form_for @job, url: {action: "create"} do |f| %>
+ <%= f.label :title, "Job title" %></br>
+  <%= f.text_field :title %> </br>
+  <%= f.label :company, "Company" %></br>
+  <%= f.text_field :company %> </br>
+  <%= f.label :ulr, "url" %></br>
+   <%= f.text_field :url %> </br>
+   <%= f.submit "create", :disable_with => 'creating...' %>
+<% end %>
+
+
+
+
